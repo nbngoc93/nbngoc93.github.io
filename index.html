@@ -70,6 +70,18 @@
       font-size: 5rem;
     }
 
+    .text {
+      color: #d99c3b;
+      opacity: 0;
+      height: 0px;
+      display: block;
+      transition: all;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
     @media (max-width: 740px) {
       .label {
         font-size: 1.7rem;
@@ -81,18 +93,10 @@
       .time span div {
         font-size: 2rem;
       }
-    }
 
-    .text {
-      color: #d99c3b;
-      opacity: 0;
-      height: 0px;
-      display: block;
-      transition: all;
-    }
-
-    .text h1 {
-        font-size: 50px;
+      .text h1 {
+		    font-size: 30px;
+		}
     }
 
   </style>
@@ -324,7 +328,7 @@
 
   function calculateRemainingTime() {
     const comingYear = new Date().getFullYear();
-    const comingDate = new Date(`June 16, ${comingYear} 00:00:00`);
+    const comingDate = new Date(`June 15, ${comingYear} 23:25:00`);
 
     const now = new Date();
     const remainingTime = comingDate.getTime() - now.getTime();
